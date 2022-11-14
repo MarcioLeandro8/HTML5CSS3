@@ -1,18 +1,20 @@
+/* importação google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*CSS Reset*/
 *{
     margin: 0;
     border: 0;
     padding: 0;
 }
-/* importação google fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
-
+/*layout*/
 .Conteiner{
     margin: 0 auto;
+    background-color:#7f0;
 }
 
 
