@@ -1,3 +1,20 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/* importação google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.Conteiner{
+    margin: 0 auto;
+}
+
 
 /* smartphofe landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
@@ -5,6 +22,10 @@
         background-color: #0ff;
 
     }
+/* layout */
+.Conteiner {
+    max-width: 540px;
+}
 }
 /* tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
@@ -12,16 +33,28 @@
         background-color: #ff0;
 
     }
+    /* layout */
+.Conteiner {
+    max-width: 720px;
+}
 }
 /* tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
     body{
         background-color: #ff6600;
     }
+/* layout */
+.Conteiner {
+    max-width: 960px;
+}
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
     body{
         background-color: #ff0000;
     }
+/* layout */
+.Conteiner {
+    max-width: 1140px;
+}
 }
