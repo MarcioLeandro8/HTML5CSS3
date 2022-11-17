@@ -21,12 +21,24 @@ body{
     justify-content: space-between;
     
 }
+.botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+
+}
 /*topo do site*/
 #topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
 }
+/* smartphone portrait*/
 /* cabeçalho */
 header{
     height: 60px;
@@ -66,9 +78,27 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color:#fff;
-
-    
 }
+/* destaque */
+main{
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+main h1 {
+    font-size: 2.5em;
+}
+main h2 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
+
+
 /* smartphofe landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     
@@ -76,6 +106,10 @@ nav ul li a {
 .Conteiner {
     max-width: 540px;
 }
+/*destaque*/
+main h1, main h2 {
+    text-shadow: #000 0.5em 0.5em 0.5em;
+    }
 }
 /* tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
@@ -84,6 +118,18 @@ nav ul li a {
 .Conteiner {
     max-width: 720px;
 }
+/*destaque*/
+main {
+    height: 45vh;
+}
+main h1 {
+    font-size: 5.5em;
+
+}
+main h2 {
+    font-size: 2em;
+}
+
 }
 /* tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
@@ -92,6 +138,11 @@ nav ul li a {
 .Conteiner {
     max-width: 960px;
 }
+main {
+    height:70vh ;
+    
+}
+
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
