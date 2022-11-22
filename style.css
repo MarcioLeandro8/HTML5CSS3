@@ -25,6 +25,10 @@ body{
     display: flex;
     align-items:center ;
 }
+.flex3 {
+    display: flex;
+    flex-direction: column;
+}
 .botao {
     text-decoration: none;
     color: #fff;
@@ -129,6 +133,23 @@ main h2 {
 .topicosSobre img {
     margin-right: 10px ;
 }
+/* One page */
+#onpage {
+    padding: 50px 10px;
+}
+#onepage h2{
+    margin-bottom: 10px;
+}
+#onpage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
 /* smartphofe landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     
@@ -141,6 +162,13 @@ main h1, main h2 {
     text-shadow: #000 0.5em 0.5em 0.5em;
     }
 }
+/*onpage */
+#video iframe {
+    width: 560px;
+    height: 315px;
+}
+
+
 /* tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
     
@@ -227,4 +255,9 @@ nav ul li a:hover {
 #destaqueSobre img {
     border-radius: 50%;
     margin-right: 50px;
+}
+/* on page */
+.flex3 {
+    flex-direction: row;
+    align-items: center;
 }
