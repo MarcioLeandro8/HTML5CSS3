@@ -21,6 +21,10 @@ body{
     justify-content: space-between;
     
 }
+.flex2 {
+    display: flex;
+    align-items:center ;
+}
 .botao {
     text-decoration: none;
     color: #fff;
@@ -84,6 +88,7 @@ main{
     height: 75vh;
     background: url(img/banner.jpg);
     background-size: cover;
+    background-position: center;
     color: #fff;
     flex-direction: column;
     justify-content: center;
@@ -97,8 +102,29 @@ main h2 {
     font-size: 1em;
     margin: 20px 0px 50px 0px;
 }
-
-
+/*sobre*/
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background.png) ;
+    background-size:cover;
+    background-position: center;
+}
+#destaqueSobre {
+    display: none;
+}
+#textoSobre {
+    color: #fff;
+    padding: 0px 10px;
+}
+#textoSobre h2 {
+    margin-bottom: 10px;
+}
+.topicosSobre {
+    margin: 20px;
+}
+.topicosSobre img {
+    margin-right: 10px ;
+}
 /* smartphofe landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     
@@ -140,7 +166,7 @@ main h2 {
 }
 main {
     height:70vh ;
-    
+
 }
 
 }
@@ -185,4 +211,16 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #c00000;
+}
+/* sobre*/
+#sobre {
+    background-attachment: fixed;
+}
+#destaqueSobre {
+    display: inline;
+}
+
+#destaqueSobre img {
+    border-radius: 50%;
+    margin-right: 50px;
 }
